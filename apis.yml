@@ -1,23 +1,73 @@
 aid: astrobotictechnology
+
 name: Astrobotictechnology
-description: 'Astrobotictechnology is a company surfaced via the API Evangelist harvest backlog (source:
-  secondary-market) and added to the network as a stub for full-pipeline profiling.'
+
+description: "Astrobotic Technology is a Pittsburgh‑based space robotics company that contracts payloads for lunar missions. It offers customers the ability to configure missions, reserve flight slots, and access technology for delivering payloads to the Moon. The firm provides services ranging from mission planning to hardware integration, aiming to enable scientific and commercial exploration of lunar space."
+
 url: https://raw.githubusercontent.com/api-evangelist/astrobotictechnology/refs/heads/main/apis.yml
+
 x-type: company
+
 x-source: harvest:secondary-market
-x-tier: stub
-x-tier-reason: harvest
+
+x-tier: profiled
+x-tier-reason: enrichment pass 2026-09-26 (modular-v1; was harvest)
+
 specificationVersion: '0.20'
+
 created: '2026-09-26'
+
 modified: '2026-09-26'
+
 tags:
+- Space
+- Robotics
+- Lunar
+- Payload
+- Technology
 - Company
-apis: []
+
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+
 common:
+- type: Hosts
+  url: hosts/astrobotictechnology-hosts.yml
+- type: Vendors
+  url: vendors/astrobotictechnology-vendors.yml
+- type: TermsOfService
+  url: https://www.astrobotic.com/lunar-delivery/send-to-the-moon/terms-and-conditions/
+- type: PrivacyPolicy
+  url: https://www.astrobotic.com/privacy-policy/
+- type: Pricing
+  url: https://www.astrobotic.com/plans-detailed-for-first-u-s-mission-to-land-on-moon-since-apollo/
+- type: Newsroom
+  url: https://www.astrobotic.com/category/press/
+- type: Blog
+  url: https://www.astrobotic.com/blog/
+- type: Documentation
+  url: https://dev.astrobotic.com/
+- type: DomainSecurity
+  url: security/astrobotictechnology-domain-security.yml
 - type: Website
-  url: https://equityzen.com/company/astrobotictechnology
+  url: https://www.astrobotic.com
+
+apis: []
+
+x-coverage:
+  state: unreadable
+  reason: no-machine-readable-spec
+  detail: No OpenAPI or other machine‑readable contract was found on the developer portal.
+  evidence:
+    - url: https://dev.astrobotic.com/openapi.json
+      status: 404
+  checked: '2026-09-26'
+x-enrichment:
+  date: '2026-09-26'
+  status: enriched
+  artifacts_added: 5
+  pass: modular-v1
+  engine: identity=local,contract=local,surfaces=local,docs=local
